@@ -28,10 +28,12 @@ public class TodoService {
         // Usa o sort no método findAll() e retorna a lista de Todo
         return todoRepository.findAll(sort);
     }
-     public List<Todo> update(){
+     public List<Todo> update(Todo todo){
+        todoRepository.save(todo);
         return list();
     }
-    public List<Todo> delete(){
+    public List<Todo> delete(Long id){
+        todoRepository.deleteById(id);;
         return list();
     }
 
