@@ -22,7 +22,7 @@ public class TodoService {
     public List<Todo> list() {
         // Cria uma ordenação por prioridade descendente e nome ascendente
         Sort sort = Sort.by("prioridade").descending().and(
-            Sort.by("name").ascending()
+            Sort.by("nome").ascending()
         );
         
         // Usa o sort no método findAll() e retorna a lista de Todo
