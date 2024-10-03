@@ -16,7 +16,8 @@ public class Todo {
     private String status;
     private int prioridade;
 
-    
+    public Todo() {}
+
 
     public Todo(String nome, String descricao, String status, int prioridade) {
         this.nome = nome;
